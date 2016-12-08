@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+<struts>
+    <!--  Overwrite Convention 配置包 struts 使用 package组织
+   	 其中： name属性必须的 用于被其他的包引用
+    extends 当前的包继承的包 通常是 struts-default-->
+    
+    <package name="helloworld" namespace="" extends="struts-default">
+       <!-- 配置action 一个请求就是 一个action --> 
+     <action name="product-input">
+   <result>/WEB-INF/pages/input.jsp</result>
+   </action>
+   </package>
+
+   
+  
+ </struts>
